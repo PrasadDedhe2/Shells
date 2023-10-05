@@ -1,0 +1,45 @@
+Basics: Powershell treats input and output both as objects. 
+
+Where-Object, ForEach-Object, Select-Object are three most imp things for traversal in an object
+
+@{key:value,Key1:value1} --> Dictionary/hash table defination
+
+
+
+Get-Command
+Get-Help
+Get-Process
+Write-Host ---> Print command
+Checkpoint-Computer ---> Creates a restore point for a computer to avoid data loss
+The Select-Object cmdlet selects the specified properties of a single object or group of objects
+Set-Alias ---> Creates or changes an alias for a cmdlet or other command in the current PowerShell session.
+-Jobs need to understand this
+
+Invoke-TroubleshootingPack (Get-TroubleshootingPack C:\Windows\diagnostics\system\{press tab here}) ---> This will fix any basic issue if system is facing
+
+Measure-Command Shows the time taken by the script to run
+Measure-Object shows the size of the output object
+{} ---> Use to do nested commad
+| ---> Use to further process the output object for previous command
+
+Start-Job ---> Use this command to run a locally situted script
+
+New-Item or Remove-Item can be used to create or delete files
+Get-Content shows us the content of a file 
+
+Get-Unique shows the exactly unique values in a list
+
+Group-Objects ---> This command groups the files/objects as type.
+ex. ForEach-Object {Get-Item -Path "C:\Users\HP\Desktop\GOALS\LTI\*"} | Group-Object -Property extension ----> This command will tell us that how many files in LTI folder are pdf,txt,png etc
+
+In a script block that defines a script property or script method, the $This variable refers to the object that is being extended.
+
+https://www.tutorialspoint.com/powershell/powershell_regex.htm --------> String operation matching shortcuts
+
+
+New,Get,Set,Remove
+
+Verb-Noun
+
+You have to bypass execution policy to import a module
+gpedit will enable you to edit group policy. Once gp is updated then run gpupdate to save the changes
