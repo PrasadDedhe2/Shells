@@ -1,0 +1,5 @@
+1) add new user --->sudo useradd newuser
+2) add its password -->sudo passwd newuser
+3) add that user to sudo group --> sudo usermod -aG sudo newuser
+
+
