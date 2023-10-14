@@ -1,0 +1,47 @@
+update set where
+insert into values
+
+
+alter table dbo.Sheet1$
+add constraint
+constraint_name primary key
+(id)
+
+
+select Top 1 id from table1 orderby newid() --> this is how you can generate a random
+Rand () will only generate a random float number
+alter table dbo.Sheet1$
+add results nvarchar
+
+create procedure who
+as
+update Sheet1$ 
+set results = 'Passed'
+where marks > 50
+update Sheet1$ 
+set results = 'Failed'
+where marks < 50
+go
+
+
+
+**********
+THE MOST COMPLEX YET REALISTIC QUERY TO GET TOPPERS FROM A TABLE SUBJECTWISE
+
+SELECT
+    s.marks,
+    s.subject,
+    s.name AS topper_name
+FROM
+    dbo.Sheet1$ s
+JOIN (
+    SELECT
+        subject,
+        MAX(marks) AS max_marks
+    FROM
+        dbo.Sheet1$
+    GROUP BY
+        subject
+) t ON s.subject = t.subject AND s.marks = t.max_marks;
+
+**************
