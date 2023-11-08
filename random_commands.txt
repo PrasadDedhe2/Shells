@@ -1,0 +1,28 @@
+Get-ChildItem | Sort-Object -Property CreationTime | Select-Object -First 10
+
+Set-Alias -Name c -Value clear
+
+Get-ChildItem | ForEach-Object {
+ Copy-Item -Path $_.FullName -destination C:\NewDirectory\
+}
+
+<#
+This is a
+multi-line
+comment
+
+Static .Net library methods can be called from PowerShell by encapsulating the full class name in
+third bracket and then calling the method using ::
+#>
+
+ [System.IO.Path]::GetFileName('C:\Windows\explorer.exe')
+
+
+$myobject = New-Object PSobject -Property @{
+Roll_number = 29 
+Name = 'Prasad Dedhe' 
+Percentage = 96}
+
+Set-Content -Path 'OKAY.TXT' -Value $myobject 
+
+ Get-Content 'okay.txt'|  ForEach-Object {$_ -replace 'd','x'} | Set-Content 'okay_1.txt'
