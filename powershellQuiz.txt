@@ -1,0 +1,40 @@
+File Operations:
+
+Write a PowerShell script that lists all files in a directory and its subdirectories, sorted by size.
+Create a script that renames all files in a directory to include a timestamp prefix.
+Write a script that searches for a specific text pattern within multiple files in a given directory.
+User Management:
+
+Create a script to list all user accounts on the system along with their last logon date.
+Write a PowerShell function to reset a user's password and force them to change it on next logon.
+Develop a script to disable inactive user accounts based on a specified threshold of days.
+System Information:
+
+Write a script to gather and display system information such as OS version, CPU, memory, and disk space.
+Create a script to monitor and log CPU and memory usage over a period of time.
+Build a script to retrieve a list of installed software on a remote computer.
+Network Tasks:
+
+Write a PowerShell function to perform a ping sweep of a given IP address range.
+Develop a script that checks the status of specific network ports on a list of remote servers.
+Create a script to test internet connectivity by attempting to download a file from a specified URL.
+Automation:
+
+Write a script to automatically back up specified directories to a designated backup location.
+Create a PowerShell function that reads data from a CSV file and creates user accounts based on the data.
+Develop a script that monitors a folder for new files and automatically moves them to a different location.
+Security and Auditing:
+
+Write a script to retrieve a list of recently modified files on the system.
+Create a script that generates a report of all local administrators on a set of remote computers.
+Develop a script to audit user logon attempts and track failed logon events.
+Error Handling and Logging:
+
+Write a script that handles errors gracefully and logs them to a specified log file.
+Create a script that checks the integrity of a set of files and logs any inconsistencies.
+Develop a script that monitors a log file for specific events and sends email notifications when triggered.
+Regular Expressions:
+
+Write a script that extracts email addresses from a text document using regular expressions.
+Create a script that validates and reformats phone numbers in a CSV file using regex.
+Develop a script that searches for and replaces a specific text pattern in multiple files using regex.
