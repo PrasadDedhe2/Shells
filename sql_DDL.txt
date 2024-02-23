@@ -1,0 +1,37 @@
+--create a database test
+--create table testTable (myindex integer primary key, name varchar) 
+--alter table testTable add test1 int
+--EXEC sp_rename 'testTable.test1', 'test2', 'COLUMN';
+-- sp_rename 'testTable', 'testTable1';
+--ALTER DATABASE test MODIFY NAME = test1
+--alter table testTable1 add test3 varchar
+--alter table dbo.testTable1 drop column test3
+-- create table testTable2 (id int primary key)
+-- drop table testTable2
+-- alter table testTable1 alter column name varchar(20)
+-- alter table testTable1 drop column test2
+-- insert into testTable1 values (1,'Prasad')
+-- insert into testTable1 values (2, 'Payal')
+-- insert into testTable1 values (3, 'Mrudula')
+-- insert into testTable1 values (4, 'Darshan')
+-- insert into testTable1 values (5, 'Dipak')
+-- insert into testTable1 values(6,'')
+-- delete from testTable1 where myindex=6
+
+/*update testTable1
+set name = 'Deepak'
+where name = 'Dipak'*/
+
+--delete from testTable1 where name = 'Deepak'
+
+/*create procedure addRows @index int, @name varchar(20)
+as
+insert into testTable1 values (@index, @name)
+select * from testTable1
+go*/
+
+/*declare @index int
+set @index = 5
+declare @name varchar(20)
+set @name = 'Dipak'
+exec addRows @index, @name*/
