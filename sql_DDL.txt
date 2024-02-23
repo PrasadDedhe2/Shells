@@ -35,3 +35,31 @@ set @index = 5
 declare @name varchar(20)
 set @name = 'Dipak'
 exec addRows @index, @name*/
+
+-- Start by joins and having clause. Then move on to loops
+
+
+/*alter procedure result
+as
+select name as Passed_Student, avg(marks) as Marks from school join testTable1 on school.myindex = testTable1.myindex group by name having avg(marks) > 60 order by Marks desc 
+go
+
+exec result*/
+
+/*declare @limit int
+set @limit = 49
+
+if @limit > 5
+begin
+select * from school
+end
+else
+begin
+select * from testTable1
+end
+
+while @limit > 0
+begin 
+print 'yes'
+set @limit = @limit -1
+end*/
