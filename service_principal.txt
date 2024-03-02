@@ -1,0 +1,8 @@
+$clientId = "Your-Client-Id"
+$clientSecret = "Your-Client-Secret"
+$tenantId = "Your-Tenant-Id"
+
+$secureClientSecret = ConvertTo-SecureString $clientSecret -AsPlainText -Force
+$credential = New-Object -TypeName PSCredential -ArgumentList $clientId, $secureClientSecret
+
+Connect-AzAccount -ServicePrincipal -Credential $credential -Tenant $tenantId
